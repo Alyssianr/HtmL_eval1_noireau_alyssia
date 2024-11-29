@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Réservation du voyage</title>
+    </head>
+    <body>
+        <header>
+            </header>
+    
+        <main>
+            <h2>Réservation du voyage</h2>
+            <form action="traitement-reservation.php" method="POST">
+                <fieldset>
+                    <legend>Informations du Client</legend>
+                    
+                    <label for="civilite">Civilité :</label>
+                    <select id="civilite" name="civilite" required>
+                        <option value="M">Monsieur</option>
+                        <option value="Mme">Madame</option>
+                    </select><br><br>
+    
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required><br><br>
+    
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" required><br><br>
+    
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required><br><br>
+    
+                    <label for="telephone">Téléphone :</label>
+                    <input type="tel" id="telephone" name="telephone" required><br><br>
+    
+                    <label for="dob">Date de naissance :</label>
+                    <input type="date" id="dob" name="dob" required><br><br>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Détails du voyage</legend>
+    
+
+                    <label for="destination">Destination :</label>
+                    <select id="destination" name="destination" required>
+                        <option value="Paris">Paris</option>
+                        <option value="Tokyo">Tokyo</option>
+                        <option value="New York">New York</option>
+                    </select><br><br>
+    
+                    <label for="date_depart">Date de départ :</label>
+                    <input type="date" id="date_depart" name="date_depart" required><br><br>
+    
+                    <label for="nb_jours">Nombre de jours :</label>
+                    <input type="number" id="nb_jours" name="nb_jours" min="1" required><br><br>
+    
+                    <label for="type_voyage">Type de voyage :</label>
+                    <select id="type_voyage" name="type_voyage" required>
+                        <option value="Solo">Solo</option>
+                        <option value="Couple">Couple</option>
+                        <option value="Faille">Famille</option>
+                    </select><br><br>
+    
+                    <label for="assurance">Je souhaite souscrire une assurance voyage :</label>
+                    <input type="checkbox" id="assurance" name="assurance"><br><br>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Validation</legend>
+    
+                    <label for="conditions_generales">
+                        <input type="checkbox" id="conditions_generales" name="conditions_generales" required>
+                        J'accepte les conditions générales.
+                    </label><br><br>
+                </fieldset>
+    
+                <input type="submit" value="Réserver">
+            </form>
+        </main>
+    
+        <footer>
+            <p></p>
+        </footer>
+    </body>
+    </html>
+    
